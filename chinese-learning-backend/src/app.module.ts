@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { DatabaseConfig } from './config/database.config';
 import { SharedModule } from './shared/shared.module';
 import { PronunciationModule } from './modules/pronunciation/pronunciation.module';
+import { TtsModule } from './modules/tts/tts.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { PronunciationModule } from './modules/pronunciation/pronunciation.modul
 
     // Shared services (Global)
     SharedModule,
+    TtsModule,
 
     // Feature modules
     PronunciationModule,
